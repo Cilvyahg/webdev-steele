@@ -1,0 +1,20 @@
+h1 {
+
+    text-align: center;
+    font-weight: normal;
+    /* with text-decoration you can also do underline, overline and solid, dotted, wavy and etc */
+    text-decoration: rgb(235, 184, 179) wavy line-through;
+    letter-spacing: 15px;
+    font-family: monospace;
+}
+
+p {
+    text-align: right;
+    line-height: 2;
+    
+
+}
+
+a {
+    text-decoration: none;
+}

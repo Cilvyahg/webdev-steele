@@ -1,0 +1,30 @@
+
+body {
+
+    background: linear-gradient(#6b7883b6, #5f5b81b0, #171120);
+    height: 100vh;
+}
+
+img {
+    width: 30%;
+    /* margin:1.6666%  same as under*/
+    margin: calc(10%/6);
+    transition: all 500ms ease-in;   
+}
+
+img:hover {
+    transform:scale(1.1);  
+}
+
+nav {
+
+    border-bottom: 2px solid #f1f1f1;
+    text-transform: uppercase;
+    width: 50%;
+    margin-left: calc(10%/6);
+    padding: 1.5rem 0;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.8rem; 
+    margin-bottom: 1rem;
+    color:rgb(228, 212, 190)
+}

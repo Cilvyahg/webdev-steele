@@ -1,0 +1,56 @@
+* { 
+    box-sizing: border-box;
+}
+
+
+body { 
+    background-color: #151b29;
+    margin: 0;
+}
+
+#first {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;  
+}
+
+
+button {
+    background: none;
+    color: #ffa260;
+    border: 3px solid;
+    padding: 1.5em 3em;
+    font-size: 1em;
+    transition: all 250ms;
+    /* if you want to seperate them all you can fill in color 250ms, border-color 250ms etc. */
+
+}
+
+button:hover {
+    border-color: #f1f15c;
+    color: white;
+    box-shadow: 0 0.5em 0.9em -0.4em #f1f15c;
+    transform: translateY(-0.25em);
+    cursor: pointer;
+}
+
+/*  BACKGROUND IMAGE */
+
+#second {
+    width: 90%;
+    height: 700px;
+    background-image: url("https://images.unsplash.com/photo-1596692509324-d57e6d011245?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1173&q=80");
+    /* background-size: cover; */
+    background-size: 95%;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0 auto;
+    background-color: rgba(138, 138, 214, 0.13);
+}
+
+
+#third {
+height: 100vh;
+}

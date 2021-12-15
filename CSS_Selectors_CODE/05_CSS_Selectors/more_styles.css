@@ -1,0 +1,144 @@
+/* h1,h2 {
+    color: olivedrab;
+} */
+
+/* * {
+    background-color: cyan;
+} */
+
+body {
+    background-color: #f1faee;
+    
+}
+
+button {
+    font-size: 30px;
+    background-color: #dab49d;
+}
+
+/* combining and targetting the selectors */
+h1,
+h2 {
+    color: #1b3a4b;
+}
+
+#signup {
+    background-color: #c08552;
+   
+}
+
+span {
+    color: #a6c48a;
+}
+
+.tag {
+    background-color: #d5bf86;
+    color: #2f2235;
+    font-size: 1rem;
+}
+
+.post a {
+    color: #b79ced;
+}
+
+/* descendant selector dus alle a die in de footer parent zitten*/
+footer a {
+    color: #a53860;
+}
+
+/* adjacent selector dus de target de selector die na de h2 komt en op hetzelfde level zit */
+h2+button {
+    font-size: 20px;
+    color: rgb(33, 77, 48);
+}
+
+/* direct child: direct descendant, dus een direct kind van de parent */
+footer>a {
+    color: #495867;
+}
+
+input[type="password"] {
+
+    color: greenyellow;
+}
+
+/* PSEUDO CLASSES - style an element based on its state */
+button:hover {
+    background-color: #ee964b;
+    color: lavender;
+}
+
+/* dus alle buttons die in de .post parent class element zitten */
+.post button:hover {
+    background-color: #a53860;
+    color: #93b7be;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* alleen de anchor tags in the .post klasse parent krijgen deze property and value */
+.post a:hover {
+    text-decoration: underline wavy 1px #2f243a;
+    background-color: rgb(241, 224, 177);
+}
+
+
+/* :active - currently be activated  */
+.post button:active {
+    background-color: #a8dcd9;
+    color: black;
+    border-radius: 10%;
+}
+
+section[class="post"] {
+    background-color: rgb(228, 224, 226);
+}
+
+/*  door het toevoegen van de n zeg je elke derde .. als je gewoon 3 had neergezet dan zou alleen het derde kindje getarged worden */
+.post:nth-of-type(3n+1) {
+    background-color: #eee5bf;
+}
+
+.post:nth-of-type(3n+2) {
+    background-color: #e8f8c1;
+}
+
+/* PSEUDO ELEMENTS - styles a specific part of a selected element(s)*/
+
+h2::first-letter {
+    font-size: 2rem;
+}
+
+p::first-line {
+    color: tomato;
+}
+
+p::selection {
+    background-color: #e0aaff;
+}
+
+h1::before {
+    content:"🐷 ";
+    color:rgb(201, 135, 186);
+
+}
+
+h1 {
+    position:relative;
+    width: 35%;
+}
+h1::after{ 
+ content: "TOP";
+ background-color:#9ef1b3;
+ font-size: bold;
+ font-size: 1rem;
+ display: inline-block; 
+ padding: 5px 10px;
+ color:#2f2235;
+ position: absolute;
+ top:-10px;
+ right: -10px;
+}
+

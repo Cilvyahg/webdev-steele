@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+
+<body>
+    <h1>Forms Demo</h1>
+    <!-- the action attribute specifies where the formdata should be whent -->
+    <!-- FORM INPUTS -->
+
+    <form action="/tacos">
+        <p>
+            <label for="username">Enter a username</label>
+            <input id="username" type="text" placeholder="username, please" name="username">
+        </p>
+        <p>
+            <label for="password">Enter a password</label>
+            <input id="password" type="password" placeholder="password" name="password"></p>
+
+
+        <p><label for="color">Pick a color</label>
+            <input type="color" id="color" name="color"></p>
+
+        <!-- door middel van de step="2" slaat tie telkens een nummer over -->
+        <p><label for="number">Choose a number</label>
+            <input id="number" type="number" placeholder="enter your number" name="num" min="1" max="1000" step="2"></p>
+
+        <!--  you can also nest the input in the label - it's easier and shorter-->
+        <p>
+            <label>
+                Write something
+                <input id="text-2" type="text">
+            </label>
+        </p>
+        <button type="button">Submit</button>
+    </form>
+    <hr>
+
+    <section>
+        <h2>Hijacking Searches</h2>
+        <h3>Search Google</h3>
+        <form action="https://www.google.com/search">
+            <input type="text" name="q">
+            <button>search google</button></form>
+
+        <h3>Seacht Reddit </h3>
+        <form action="http://www.reddit.com/search">
+            <input type="text" name="q">
+            <button>search reddit</button>
+        </form>
+
+        <h3>Search Youtube</h3>
+        <form action=" https://www.youtube.com/results">
+            <input type="text" name="search_query">
+            <button>Search Youtube</button>
+        </form>
+    </section>
+    <hr>
+    <h2>More inputs</h2>
+    <form action="/birds">
+        <input type="checkbox" name="agree_tos" id="agree" checked>
+        <label for="agree">I agree to everything</label>
+
+        <p>
+            <label for="xs">Extra small</label>
+            <input type="radio" name="size" id="xs" value="xs">
+            <label for="s">Small</label>
+            <input type="radio" name="size" id="s" value="s">
+            <label for="m">Medium</label>
+            <input type="radio" name="size" id="m" value="m">
+        </p>
+
+        <p>
+            <label for="meal">Please select an Entree</label>
+            <select name="meal" id="meal">
+                <option value="">--Please choose your meal--</option>
+                <option value="fish">Fish</option>
+                <option value="meat">Meat</option>
+                <option value="vegetarian">Vegetarian</option>
+                <option value="vegan">Vegan</option>
+                <option value="none">None</option>
+            </select>
+        </p>
+
+        <!-- range inputs -->
+        <p><label for="cheese" id="cheese">Amount of Cheese</label>
+            <input type="range" name="cheese" id="cheese" min="1" max="10" value="5"></p>
+
+
+
+        <p>
+            <label for="requests">Any special requests?</label>
+            <textarea name="requests" id="requests" cols="80" rows="10"
+                placeholder="you can write anything here"></textarea>
+        </p>
+
+        <button>Submit</button>
+    </form>
+
+    <!-- Validations server-side since client-side is done in JS-->
+    <h2>Validation</h2>
+    <form action="/dummy">
+        <label for="first">First name</label>
+        <input type="text" name="first" id="first" required>
+
+        <p><label for="username">Username</label>
+            <input type="text" id="username" name="username" minlength="5" maxlength="20" required>
+        </p>
+        <p> <label for="email">Email</label>
+            <input type="email" name="" id="email" required>
+            <label for="url">Link</label>
+            <input type="url" name="" id="url" required>
+        </p>
+        <button>Click here</button>
+    </form>
+
+    <hr>
+
+    <!-- 56: creating a marathon Registration Form  -->
+    <h2>Race Registration!</h2>
+    <form action="/race">
+        <div class="form-1">
+            <label for="first-name">First Name</label>
+            <input type="text" id="first-name" name="first-name" placeholder="first name" required>
+            <label for="last-name">Last Name</label>
+            <input type="text" id="last-name" name="last-name" placeholder="last name" required>
+        </div>
+
+        <p class="form-2">
+
+            Select a Race:</p>
+        <div>
+            <input type="radio" name="radio-race" id="radio-race1" value="fun">
+            <label for="radio-race1">Fun Run 5k</label></div>
+        <div>
+            <input type="radio" name="radio-race" id="radio-race2" value="half">
+            <label for="radio-race2">Half Marathon</label></div>
+        <div>
+            <input type="radio" name="radio-race" id="radio-race3" value="full">
+            <label for="radio-race3">Full Marathon</label>
+        </div>
+        <div>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="email" required>
+            <label for="password">Password</label>
+            <input type="password" name="password" placeholder="password" id="password" required>
+        </div>
+
+        <div>
+            <label for="age">Select Age Group</label>
+            <select name="age" id="age">
+
+                <option value="18-30">18-30</option>
+                <option value="30-45">30-45</option>
+                <option value="45-60">45-60</option>
+                <option value="60-75">60-75</option>
+                <option value="75-100">75-100</option>
+
+            </select></div>
+        <div>
+            <button type="button">Register</button>
+        </div>
+    </form>
+</body>
+</html>

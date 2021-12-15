@@ -1,0 +1,116 @@
+* {
+    box-sizing: border-box;
+
+}
+
+
+
+.wrap {
+
+    display: flex;
+    flex-wrap: wrap;
+    width: 400px;
+    margin: auto;
+}
+
+.block {
+    width: 200px;
+    height: 200px;
+    background-color: olivedrab;
+    border: solid black 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    color: palegoldenrod;
+}
+
+.exe {
+    width: 200px;
+    height: 200px;
+    background-color: #74a4a8;
+
+}
+
+h1 {
+    background-color: #c9c9c9;
+    width: 200px;
+    padding-left: 100px;
+    padding-top: 50px;
+
+}
+
+#one {
+
+    background-color: #adc178;
+    border: 1px black solid;
+    margin: 50px
+}
+
+#two {
+
+    background-color: #a98467;
+    border: 3px #301014 dashed;
+    border-left: #1dd3b0 4px dotted;
+
+}
+
+#three {
+    background-color: #f0ead2;
+    border: #b4c02d 3px solid;
+
+}
+
+#four {
+    background-color: #f29ca3;
+    border-radius: 50%;
+}
+
+button {
+    padding: 0 20px;
+}
+
+/* percentage are usually relative to the parents */
+
+.units {
+    background-color: #b14b39;
+    width: 100vw;
+    height: 200px;
+}
+
+.units-child {
+    background-color: #76c401;
+    width: 100%;
+    height: 50%;
+
+}
+
+/*  this part is about EM UNITS */
+
+h2 {
+    font-size: 4em;
+    margin-left: 1em;
+}
+
+article > p { 
+    font-size: 5em;
+}
+
+article {
+
+    font-size: 10px;
+}
+
+.em { 
+    font-size:3em;
+    padding: 0 1em; 
+    border-radius: 0.5em;
+    background-color: rgb(101, 148, 148);
+    color: white;
+}
+
+/* this part is about REM Units */
+
+ul {
+    font-size: 2em; 
+}
