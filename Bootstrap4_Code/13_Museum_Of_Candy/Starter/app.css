@@ -2,8 +2,9 @@ body {
     background-color: #f5d9df;
     font-family: "Nunito", sans-serif;
 }
+
 .lolli h2 {
-    color:#ea1c2c;
+    color: #ea1c2c;
     font-weight: 100;
     font-size: 2.5rem;
 }
@@ -17,6 +18,7 @@ body {
 
 .content {
     margin-top: 100px;
+    margin-bottom: 100px;
 
 }
 
@@ -32,7 +34,7 @@ body {
 
 
 #mainNavbar .nav-link {
-    color:white;
+    color: white;
 }
 
 #mainNavbar .nav-link:hover {
@@ -40,20 +42,30 @@ body {
 }
 
 #headingGroup span {
-    color:#ea1c2c;;
+    color: #ea1c2c;
+    ;
 }
 
 #headingGroup h1 {
-   font-weight: 100;
-   font-size: 3.5rem;
+    font-weight: 100;
+    font-size: 3.5rem;
+}
+
+.navbar.scrolled {
+    background-color: #dec0de;
+    opacity: 0.9;
+    transition: background-color 300ms ease-in;
 }
 
 /* MEDIA QUERIES */
 
 @media (max-width: 1200px) {
-#headingGroup h1 {
-    font-weight: 100;
-    font-size: 3rem;
-}
+    #headingGroup h1 {
+        font-weight: 100;
+        font-size: 3rem;
+    }
+    .lolli h2 {
+        font-size: 2rem;
+    }
 
 }
