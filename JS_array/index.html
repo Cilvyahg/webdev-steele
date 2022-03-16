@@ -70,12 +70,37 @@
         to the back of the array. Use the compareFunction to sort them into proper numerical orderl.
         by using only sort() the numbers will be converted into strings and it will therefore only look at the first
         number and put them in ascending order. </p>
-        <p></p>
 
 
+    <h2>REFERENCE TYPES AND EQUALITY TYPES</h2>
+    <p>In arrays JS is looking if the reference is the same. they do not look at what's inside if that is the same.
+        its not the content that is stored like in primitives, it has to do with references, it has to do with arrows
+        pointing in the same direction</p>
+
+    <h2>Replace an value in nested array</h2>
+    <code>const airplaneSeats = [
+        ['Ruth', 'Anthony', 'Stevie'],
+        ['Amelia', 'Pedro', 'Maya'],
+        ['Xavier', 'Ananya', 'Luis'],
+        ['Luke', null, 'Deniz'],
+        ['Rin', 'Sakura', 'Francisco']
+        ];
+
+        // YOUR CODE GOES BELOW THIS LINE:
+        airplaneSeats[3][1] = "Hugo"</code>
+
+    which means that te 3rd index array and the 1st index of 3rd array will be changed into Hugo.
 
 
-
+    <h2>OBJECT LITERALS</h2>
+    <p>Objects are a collections of properties. They are a key-value pair.
+        An object literal is a comma seperated lits of key-value pairs inside of curly braces. These values can be
+        properties or functions. property = key + value
+        {key:value}
+        objects are unlike arrays not ordered!
+    </p>
+    <h6>how to acces an object literal</h6>
+    <p>every key that we mke in objects is converted to a string</p>
 </body>
 
 </html>
