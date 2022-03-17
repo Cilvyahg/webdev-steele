@@ -40,3 +40,43 @@ const years = {
 }
 
 years["1999"]
+
+let person = {
+
+    firstName: "Mick",
+    lastName: "Jagger"
+}
+
+person["firstName"]
+
+// change values in objects and assigning a new value
+
+const midterms = {
+    danielle: 96,
+    thomas: 78
+}
+
+midterms.thomas = 79;
+midterms.thomas = "C+";
+midterms["danielle"] = "A";
+midterms.ezra
+midterms.ezra = "B+"
+midterms["antonio"] = "A-"
+
+const comments = [{
+        username: "Tammy",
+        text: "lolololol",
+        votes: 9
+    },
+    {
+        username: "FishBoi",
+        text: "glub glub",
+        votes: 2890
+    }
+]
+
+// how to get access to the index of 1 and text
+comments[1]['text']
+
+
+
