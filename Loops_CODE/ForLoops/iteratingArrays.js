@@ -318,10 +318,62 @@ const animals = [
     "Zorilla"
 ]
 
-for (let i = 0; i < animals.length; i++) {
-    console.log(i, animals[i])
-}
+// for (let i = 0; i < animals.length; i++) {
+//     console.log(i, animals[i])
+// }
 
 // for (let i = animals.length - 1; i >= 0; i--) {
 //     console.log(animals[i])
 // }
+
+
+// for (let i = 0; i < animals.length; i++) {
+//     console.log(i, animals[i]);
+// }
+
+
+for (let i = animals.length - 1; i >= 0; i--) {
+    console.log(animals[i]);
+}
+
+const people = ["Scooby", "Velma", "Daphne", "Shaggy", "Fred"];
+for (let i = 0; i < people.length; i++) {
+    console.log(i + 1, people[i].toUpperCase())
+}
+
+
+
+
+
+
+// FOR ... OF LOOP
+
+// exercise with Dev Ed about For Loop and While Loop
+
+const names = ["Ed", "John", "Maria", "Eliza", "Burrito", "Harry", "Potter"];
+
+// for (name of names) {
+//     console.log(`hello there ${name}`);
+// }
+
+const menu = ["Foccacia", "Bruschetta", "Garlic Bread", "Caprese Salad", "Pizza", "Pasta", "Risotto"];
+for (const item of menu) console.log(item);
+
+for (const item of menu.entries()) {
+    console.log(item); 
+}
+
+console.log([menu.entries()]);
+
+
+
+
+//Nested loops
+
+for (let i = 1; i <= 10; i++){
+    console.log(`i is: ${i}`)
+    for (let j = 1; j < 4; j++) {
+        console.log(`J is: ${j}`)
+    }
+}
+
