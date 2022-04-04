@@ -350,7 +350,7 @@ for (let i = 0; i < people.length; i++) {
 
 // exercise with Dev Ed about For Loop and While Loop
 
-const names = ["Ed", "John", "Maria", "Eliza", "Burrito", "Harry", "Potter"];
+// const names = ["Ed", "John", "Maria", "Eliza", "Burrito", "Harry", "Potter"];
 
 // for (name of names) {
 //     console.log(`hello there ${name}`);
@@ -360,7 +360,7 @@ const menu = ["Foccacia", "Bruschetta", "Garlic Bread", "Caprese Salad", "Pizza"
 for (const item of menu) console.log(item);
 
 for (const item of menu.entries()) {
-    console.log(item); 
+    console.log(item);
 }
 
 console.log([menu.entries()]);
@@ -370,10 +370,39 @@ console.log([menu.entries()]);
 
 //Nested loops
 
-for (let i = 1; i <= 10; i++){
+for (let i = 1; i <= 10; i++) {
     console.log(`i is: ${i}`)
     for (let j = 1; j < 4; j++) {
         console.log(`J is: ${j}`)
     }
 }
 
+const names = ["John", "Bob", "Mary", "Joe"];
+
+for (let i = 0; i < names.length; i++) {
+    console.log(names[i]);
+    // if (i === 3) break;
+}
+
+// easier the write by using for of loop. it is deconstructing the array.
+// A for of loop is slower than a for loop.
+for (name of names) {
+    console.log(name);
+}
+
+//object  - key value pairs
+const user = {
+    "firstName": "John",
+    "lastName": "Doe"
+};
+
+// for in loop
+
+for (key in user) console.log(user[key]);
+
+let i = 0; 
+while (i < 10) {
+    console.log(i);
+    i++; 
+if (i === 5) break;
+}
