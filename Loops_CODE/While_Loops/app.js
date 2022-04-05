@@ -51,8 +51,31 @@
 //     console.log(`You got it! It took you ${attempts} guesses`)
 // }
 
-let count = 0;
-while (count < 10) {
-    console.log(count)
-    count++;
+
+
+// while loop is easier when a loop needs to run infinite times
+
+const SECRET = "BabyHippo";
+
+let guess = prompt("enter the secretcode ..");
+while (guess !== SECRET) {
+    guess = prompt("enter the secret code again...")
 }
+console.log("CONGRATS U GOT THE SECRET!!")
+
+
+
+// let input = prompt("Hey say something");
+
+// while (true) {
+//     input = prompt(input);
+//     if (input === "stop copying me") {
+//         break;
+//     }
+// }
+// console.log("Ok you win!")
+
+
+let maximum = parseInt(prompt("Enter the maximum nnumer!"));
+const targetNum = Math.floor(Math.random() * maximum) + 1;
+console.log(targetNum);
