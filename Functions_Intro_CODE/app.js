@@ -89,7 +89,7 @@ function log(message) {
     console.log(message.toUpperCase());
 
     return 1;
-    
+
 }
 
 let ans = log("sjkljkjhgfgfffsklwjsl")
@@ -97,7 +97,7 @@ let ans = log("sjkljkjhgfgfffsklwjsl")
 console.log(ans)
 
 if (ans) {
-    
+
 
 }
 
@@ -150,3 +150,29 @@ console.log(rant("I hate beets"))
 // message.toUpperCase()
 // console.log("")
 // }
+
+
+
+function repeat(str, numTimes) {
+    let result = ' ';
+    for (let i = 0; i < numTimes; i++) {
+        result += str;
+    }
+    console.log(result);
+}
+
+
+
+
+// return value - output function the return keyword stops the execution of the function
+// x en y here are placeholders. we can only return ONE value. when you have your return statement ONLY one value will be returned
+function add(x, y) {
+    if (typeof x !== 'number' || typeof y !== 'number') {
+        return false;
+    }
+    return x + y;
+}
+
+function multiply(x, y) {
+    return x * y;
+}

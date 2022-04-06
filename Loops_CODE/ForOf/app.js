@@ -33,3 +33,13 @@ for (let subreddit of subreddits) {
 //     console.log(char)
 // }
 
+
+// for of loop - making a variable called 'sub' it is storing each element in the array
+// so you don't have to use the [i] index
+
+for (let sub of subreddits) {
+    console.log(sub)
+}
+console.log(sub)
+
+
